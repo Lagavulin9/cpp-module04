@@ -16,20 +16,29 @@
 
 # include <string>
 # include <iostream>
-# include "ICharacter.hpp"
+
+class ICharacter;
 
 class AMateria
 {
 protected:
-
+	std::string			_type;
+	unsigned int		_xp;
+	bool				_equipped;
 private:
-	
+
 public:
 	AMateria();
 	AMateria(std::string const&);
-	~AMateria();
+	AMateria(const AMateria&);
+	virtual ~AMateria();
+
+	AMateria&			operator=(const AMateria&);
 
 	std::string const&	getType(void) const;
+	unsigned int		getXP(void) const;
+	bool				getEquipped(void) const;
+	void				setEquipped(bool);
 	virtual AMateria*	clone() const = 0;
 	virtual void		use(ICharacter& target);
 };

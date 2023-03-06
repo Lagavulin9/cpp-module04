@@ -2,7 +2,13 @@ NAME = poly
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98 -pedantic
 LDFLAGS = 
-SRCS = main.cpp
+SRCS = main.cpp \
+	AMateria.cpp \
+	MateriaSource.cpp \
+	Character.cpp \
+	Ice.cpp \
+	Cure.cpp \
+	Floor.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all : $(NAME)

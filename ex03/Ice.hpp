@@ -1,21 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ICharacter.cpp                                     :+:      :+:    :+:   */
+/*   Ice.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/19 11:47:25 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/19 11:47:25 by marvin           ###   ########.fr       */
+/*   Created: 2023/03/03 19:40:32 by marvin            #+#    #+#             */
+/*   Updated: 2023/03/03 19:40:32 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ICharacter.hpp"
+#pragma once
+#ifndef __ICE_HPP__
+# define __ICE_HPP__
 
-ICharacter::ICharacter(/* args */)
-{
-}
+# include "AMateria.hpp"
+# include "Character.hpp"
+# include <iostream>
 
-ICharacter::~ICharacter()
+class Ice : public AMateria
 {
-}
+private:
+
+public:
+	Ice();
+	Ice(const std::string&);
+	Ice(const Ice&);
+	~Ice();
+
+	Ice&		operator=(const Ice&);
+
+	AMateria	*clone(void) const;
+	void		use(ICharacter&);
+};
+
+#endif
