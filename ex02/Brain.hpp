@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 21:36:20 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/18 21:36:20 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/08 14:20:48 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 #ifndef __BRAIN_HPP__
 # define __BRAIN_HPP__
 
-#include <string>
-#include <iostream>
+# include <string>
+# include <iostream>
+# include <stdlib.h>
 
 class Brain
 {

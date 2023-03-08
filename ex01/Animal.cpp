@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 18:41:23 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/18 18:41:23 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/08 14:03:14 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Animal::Animal():
 }
 
 Animal::Animal(const Animal& ref):
-	_type(ref.getType())
+	_type(ref._type)
 {
 	std::cout << "Animal class copy constructor called" << std::endl;
 }
@@ -32,7 +32,7 @@ Animal::~Animal()
 Animal&	Animal::operator=(const Animal& ref)
 {
 	std::cout << "Animal class copy assignment operator called" << std::endl;
-	this->_type = ref.getType();
+	this->_type = ref._type;
 	return (*this);
 }
 

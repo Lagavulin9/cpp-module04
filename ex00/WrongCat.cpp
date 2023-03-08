@@ -15,7 +15,7 @@
 WrongCat::WrongCat()
 {
 	std::cout << "WrongCat class constructor called" << std::endl;
-	this->setType("WrongCat");
+	this->_type = "WrongCat";
 }
 
 WrongCat::WrongCat(const WrongCat& ref):
@@ -32,7 +32,7 @@ WrongCat::~WrongCat()
 WrongCat&	WrongCat::operator=(const WrongCat& ref)
 {
 	std::cout << "WrongCat class copy assignment operator called" << std::endl;
-	this->setType(ref.getType());
+	this->_type = ref._type;
 	return (*this);
 }
 

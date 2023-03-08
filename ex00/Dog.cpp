@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 19:15:59 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/18 19:15:59 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/08 14:03:43 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Dog::Dog()
 {
 	std::cout << "Dog class constructor called" << std::endl;
-	this->setType("Dog");
+	this->_type = "Dog";
 }
 
 Dog::Dog(const Dog& ref):
@@ -32,7 +32,7 @@ Dog::~Dog()
 Dog&	Dog::operator=(const Dog& ref)
 {
 	std::cout << "Dog class copy assignment operator called" << std::endl;
-	this->setType(ref.getType());
+	this->_type = ref._type;
 	return (*this);
 }
 

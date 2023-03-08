@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 21:36:54 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/18 21:36:54 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/08 14:29:38 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 Brain::Brain()
 {
-	std::string	idea = "idea";
-
 	std::cout << "Brain class constructor called" << std::endl;
 	for (int i=0; i<100; i++)
 	{
-		this->_ideas[i] = "hi";
+		this->_ideas[i] = "some idea";
 	}
 }
 

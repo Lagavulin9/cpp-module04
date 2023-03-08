@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 19:16:13 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/18 19:16:13 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/08 14:57:41 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,15 @@
 class Cat: public Animal
 {
 private:
-	Brain*	_brain;
+	Brain	*_brain;
 public:
 	Cat();
 	Cat(const Cat&);
 	~Cat();
 
-	Cat&	operator=(const Cat&);
-	void	makeSound(void) const;
+	Cat&				operator=(const Cat&);
+	void				makeSound(void) const;
+	const std::string	getIdea(int) const;
 };
 
 #endif

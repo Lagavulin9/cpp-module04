@@ -1,6 +1,6 @@
 NAME = poly
 CXX = c++
-CXXFLAGS = -Wall -Werror -Wextra -std=c++98 -pedantic
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 LDFLAGS = 
 SRCS = main.cpp \
 	Animal.cpp \

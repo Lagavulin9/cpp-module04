@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 19:43:38 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/18 19:43:38 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/08 14:04:20 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 class WrongAnimal
 {
-private:
-	std::string	type;
+protected:
+	std::string	_type;
 public:
 	WrongAnimal();
 	WrongAnimal(const WrongAnimal&);

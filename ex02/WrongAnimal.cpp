@@ -13,13 +13,13 @@
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal():
-	type("WrongAnimal")
+	_type("WrongAnimal")
 {
 	std::cout << "WrongAnimal class constructor called" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal& ref):
-	type(ref.getType())
+	_type(ref._type)
 {
 	std::cout << "WrongAnimal class copy constructor called" << std::endl;
 }
@@ -32,18 +32,18 @@ WrongAnimal::~WrongAnimal()
 WrongAnimal&	WrongAnimal::operator=(const WrongAnimal& ref)
 {
 	std::cout << "WrongAnimal class copy assignment operator called" << std::endl;
-	this->type = ref.getType();
+	this->_type = ref._type;
 	return (*this);
 }
 
 void	WrongAnimal::setType(const std::string& type)
 {
-	this->type = type;
+	this->_type = type;
 }
 
 const std::string&	WrongAnimal::getType(void) const
 {
-	return (this->type);
+	return (this->_type);
 }
 
 void	WrongAnimal::makeSound(void) const
