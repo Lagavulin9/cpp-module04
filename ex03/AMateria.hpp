@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/19 11:19:32 by marvin            #+#    #+#             */
-/*   Updated: 2023/02/19 11:19:32 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/15 15:46:19 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ class AMateria
 {
 protected:
 	std::string			_type;
-	unsigned int		_xp;
 	bool				_equipped;
 private:
 
@@ -36,7 +35,6 @@ public:
 	AMateria&			operator=(const AMateria&);
 
 	std::string const&	getType(void) const;
-	unsigned int		getXP(void) const;
 	bool				getEquipped(void) const;
 	void				setEquipped(bool);
 	virtual AMateria*	clone() const = 0;

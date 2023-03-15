@@ -23,10 +23,9 @@ Cure::Cure(const std::string& type):
 }
 
 Cure::Cure(const Cure& ref):
-	AMateria(ref.getType())
+	AMateria(ref._type)
 {
-	this->_xp = ref.getXP();
-	this->_equipped = ref.getEquipped();
+	this->_equipped = ref._equipped;
 }
 
 Cure::~Cure()
@@ -46,7 +45,5 @@ AMateria*	Cure::clone(void) const
 
 void	Cure::use(ICharacter& target)
 {
-	AMateria::use(target);
 	std::cout << "* heals " << target.getName() << "'s wounds *" << std::endl;
-	this->_xp += 10;
 }

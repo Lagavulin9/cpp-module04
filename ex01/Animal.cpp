@@ -6,7 +6,7 @@
 /*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 18:41:23 by marvin            #+#    #+#             */
-/*   Updated: 2023/03/08 14:03:14 by jinholee         ###   ########.fr       */
+/*   Updated: 2023/03/14 19:08:25 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ Animal&	Animal::operator=(const Animal& ref)
 	return (*this);
 }
 
-void	Animal::setType(const std::string& _type)
+void	Animal::setType(const std::string& type)
 {
-	this->_type = _type;
+	this->_type = type;
 }
 
 const std::string&	Animal::getType(void) const

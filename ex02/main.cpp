@@ -6,7 +6,7 @@
 /*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 18:34:51 by marvin            #+#    #+#             */
-/*   Updated: 2023/03/08 19:27:17 by jinholee         ###   ########.fr       */
+/*   Updated: 2023/03/15 15:31:07 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int	main(void)
 	kitty->makeSound();
 	delete(doggo);
 	delete(kitty);
+
 	return (0);
 }

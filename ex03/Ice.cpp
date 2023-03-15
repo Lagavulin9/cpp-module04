@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Ice.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jinholee <jinholee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 20:22:28 by marvin            #+#    #+#             */
-/*   Updated: 2023/03/03 20:22:28 by marvin           ###   ########.fr       */
+/*   Updated: 2023/03/15 16:19:44 by jinholee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,9 @@ Ice::Ice(const std::string& type):
 }
 
 Ice::Ice(const Ice& ref):
-	AMateria(ref.getType())
+	AMateria(ref._type)
 {
-	this->_xp = ref.getXP();
-	this->_equipped = ref.getEquipped();
+	this->_equipped = ref._equipped;
 }
 
 Ice::~Ice()
@@ -46,6 +45,5 @@ AMateria*	Ice::clone(void) const
 
 void	Ice::use(ICharacter& target)
 {
-	AMateria::use(target);
 	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }

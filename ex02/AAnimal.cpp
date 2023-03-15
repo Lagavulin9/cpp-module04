@@ -36,9 +36,9 @@ AAnimal&	AAnimal::operator=(const AAnimal& ref)
 	return (*this);
 }
 
-void	AAnimal::setType(const std::string& _type)
+void	AAnimal::setType(const std::string& type)
 {
-	this->_type = _type;
+	this->_type = type;
 }
 
 const std::string&	AAnimal::getType(void) const
